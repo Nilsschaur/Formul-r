@@ -35,5 +35,4 @@ form.addEventListener("submit", function(event) {
         event.preventDefault();
         errorDiv.innerHTML = "<ul><li>" + errors.join("</li><li>") + "</li></ul>";
     }
- )
-}
+ });

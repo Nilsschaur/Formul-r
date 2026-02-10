@@ -1,0 +1,32 @@
+* {
+    background-color: bisque;
+}
+
+.test {
+    background-color: rgb(255, 212, 160);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.60rem;
+    padding: 1rem;
+    margin-left: 28.5rem;
+    margin-right: 28.5rem;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rubrik {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: -0.5px;
+}
+
+.viggo {
+    background-color: rgb(248, 233, 203);
+    border-radius: 0.5rem;
+    border-color: rgb(255, 152, 63);
+}
+
+.grej {
+    background-color: rgb(255, 212, 160);
+}
