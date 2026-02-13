@@ -12,23 +12,23 @@ form.addEventListener("submit", function(event) {
     const terms = document.getElementById("terms").checked;
 
     if (!/^[A-Za-zÅÄÖåäö]{2,50}$/test(name)) {
-        errors.push("Namn måste vara 2-50 bokstäver säger Viggo.");
+        errors.push("Namn måste vara 2-50 bokstäver.");
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-        errors.push("Ange en giltig e-postadress säger Viggo.");
+        errors.push("Ange en giltig e-postadress.");
     }
 
     if (message.length < 10 || message.length >500) {
-        errors.push("Meddelandet måste vara mellan 10 och 500 tecken säger Viggo.");
+        errors.push("Meddelandet måste vara mellan 10 och 500 tecken.");
     }
 
     if (subject ==="") {
-        errors.push("Välj ett ämne säger Viggo.");
+        errors.push("Välj ett ämne.");
     }
 
     if (!terms) {
-        errors.push("Du måste godkänna villkoren säger Viggo.");
+        errors.push("Du måste godkänna villkoren.");
     }
 
     if (errors.length >0) {
