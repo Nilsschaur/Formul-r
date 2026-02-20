@@ -4,6 +4,7 @@ const errorDiv = document.getElementById("errorMessages");
 form.addEventListener("submit", function(event) {
 
     errorDiv.innerHTML="";//Rensa tidigare fel let errors =[];
+    let errors = [];
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -11,7 +12,7 @@ form.addEventListener("submit", function(event) {
     const subject = document.getElementById("subject").value;
     const terms = document.getElementById("terms").checked;
 
-    if (!/^[A-Za-zÅÄÖåäö]{2,50}$/test(name)) {
+    if (!/^[A-Za-zÅÄÖåäö]{2,50}$/.test(name)) {
         errors.push("Namn måste vara 2-50 bokstäver.");
     }
 
